@@ -1,8 +1,8 @@
 :root {
-  --primary: #ff2b3d;
+  --primary: green;
   --secondary: #bdefff;
   --accent: #18c964;
-  --background: #ffffff;
+  --background: white;
   --text: #6e2bbd;
   --muted: rgba(110, 43, 189, 0.68);
   --panel: rgba(255, 255, 255, 0.72);
@@ -695,7 +695,7 @@ body[data-theme="minimalist"] {
 }
 
 body[data-theme="futuristic"],
-body[data-theme="three-d"] {
+body[data-background="three-d"] {
   --radius: 34px;
 }
 
@@ -714,6 +714,11 @@ body[data-theme="cyberpunk"] {
   --primary: #ff2bd6;
   --secondary: #00e5ff;
   --accent: #b6ff00;
+}
+
+body[data-theme="creative"] {
+  --radius: 30px;
+  --shadow: 0 28px 86px color-mix(in srgb, var(--accent), transparent 72%);
 }
 
 body[data-theme="corporate"] {
