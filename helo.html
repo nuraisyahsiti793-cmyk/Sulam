@@ -1,383 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Muhammad Haziq Bin Roslan | Portfolio</title>
-
-
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-<link rel="stylesheet" href="style.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ulfah nuhaa | Future Technology Portfolio</title>
+  <meta name="description" content="A customizable futuristic personal portfolio for ulfah nuhaa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@400;600;700&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-<body>
-
-
-<header>
-
-<nav>
-
-<h2 class="logo">
-Haziq 💻
-</h2>
-
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-
-</nav>
-
-</header>
-
-
-
-
-
-<!-- HERO -->
-
-
-<section class="hero" id="home">
-
-
-<div class="hero-text">
-
-
-<h1>
-
-Hi, I'm
-
-<span>
-Muhammad Haziq Bin Roslan
-</span>
-
-</h1>
-
-
-<p>
-Student | Future ICT Professional | Future Engineer
-</p>
-
-
-
-<button onclick="scrollAbout()">
-
-Explore Portfolio
-
-</button>
-
-
-
-</div>
-
-
-
-
-
-<div class="profile">
-
-
-<div class="profile-circle">
-
-
-<img src="profile.png">
-
-
-</div>
-
-
-
-<div class="icon-book">
-
-📚
-
-</div>
-
-
-
-<div class="icon-game">
-
-🎮
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- ABOUT -->
-
-
-<section id="about">
-
-
-<h2>
-About Me 📘
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<i class="fa-solid fa-user"></i>
-
-<h3>Name</h3>
-
-<p>
-Muhammad Haziq Bin Roslan
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<i class="fa-solid fa-school"></i>
-
-<h3>School</h3>
-
-<p>
-SMK TUSZA
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<i class="fa-solid fa-gears"></i>
-
-<h3>Dream Career</h3>
-
-<p>
-Engineer
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<i class="fa-solid fa-book"></i>
-
-<h3>Hobby</h3>
-
-<p>
-Membaca
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<i class="fa-solid fa-landmark"></i>
-
-<h3>Favourite Subject</h3>
-
-<p>
-Sejarah
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
-<p class="description">
-
-
-Hello! I am Muhammad Haziq Bin Roslan from SMK TUSZA.
-I enjoy reading and learning new knowledge.
-My dream is to become an engineer while improving my ICT and technology skills.
-
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-<!-- SKILLS -->
-
-
-<section id="skills">
-
-
-<h2>
-My Skills 💡
-</h2>
-
-
-
-<div class="skills-box">
-
-
-<div>
-
-<i class="fa-solid fa-code"></i>
-
-<h3>
-Programming
-</h3>
-
-</div>
-
-
-
-
-<div>
-
-<i class="fa-solid fa-computer"></i>
-
-<h3>
-ICT Skills
-</h3>
-
-</div>
-
-
-
-
-<div>
-
-<i class="fa-solid fa-people-group"></i>
-
-<h3>
-Teamwork
-</h3>
-
-</div>
-
-
-
-
-<div>
-
-<i class="fa-solid fa-brain"></i>
-
-<h3>
-Problem Solving
-</h3>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- CONTACT -->
-
-
-<section id="contact">
-
-
-<h2>
-Contact Me 📩
-</h2>
-
-
-
-<form>
-
-
-<input type="text" placeholder="Your Name">
-
-
-<input type="email" placeholder="Your Email">
-
-
-<textarea placeholder="Your Message"></textarea>
-
-
-<button>
-Send Message
-</button>
-
-
-</form>
-
-
-
-</section>
-
-
-
-
-
-
-<footer>
-
-
-<p>
-
-© 2026 Muhammad Haziq Bin Roslan | Student Portfolio
-
-</p>
-
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
-
+<body data-theme="modern-tech" data-background="particles">
+  <div class="cursor" aria-hidden="true"></div>
+  <canvas id="bg-scene" aria-hidden="true"></canvas>
+  <div class="ambient-layer" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a href="#home" class="brand magnetic" data-edit="fullName">ulfah nuhaa</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="mode-toggle magnetic" type="button" id="modeToggle" aria-label="Toggle dark and light mode">
+        <span class="sun"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-panel" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Future technology professional</p>
+        <h1>
+          <span class="holo-text" data-edit="fullName">ulfah nuhaa</span>
+        </h1>
+        <p class="hero-title" data-edit="title">Student</p>
+        <p class="hero-summary" data-edit="about">
+          I am a student building a confident path into technology, design, and problem solving. This portfolio is ready for my story, projects, certifications, achievements, and future opportunities.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="#projects">Explore Work</a>
+          <button class="btn secondary magnetic" type="button" id="downloadResume">Download CV</button>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="avatar-stage magnetic">
+          <canvas id="hero-avatar" aria-label="Interactive floating 3D avatar"></canvas>
+          <label class="photo-chip" for="photoInput">
+            <span>Photo</span>
+            <input id="photoInput" type="file" accept="image/*">
+          </label>
+          <div class="profile-photo" id="profilePhoto" role="img" aria-label="Profile photo placeholder">
+            <span>UN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customizer section-panel reveal" aria-label="Design customization">
+      <div>
+        <p class="eyebrow">Live design studio</p>
+        <h2>Customize the portfolio</h2>
+      </div>
+      <div class="control-grid">
+        <label>
+          Theme
+          <select id="themeSelect">
+            <option value="minimalist">Minimalist</option>
+            <option value="modern-tech" selected>Modern Tech</option>
+            <option value="futuristic">Futuristic</option>
+            <option value="glassmorphism">Glassmorphism</option>
+            <option value="neumorphism">Neumorphism</option>
+            <option value="cyberpunk">Cyberpunk</option>
+            <option value="creative">Creative Portfolio</option>
+            <option value="corporate">Corporate Professional</option>
+          </select>
+        </label>
+        <label>
+          Background
+          <select id="backgroundSelect">
+            <option value="animated-gradient">Animated Gradient</option>
+            <option value="mesh-gradient">Mesh Gradient</option>
+            <option value="particles" selected>Interactive Particle Background</option>
+            <option value="floating-shapes">Floating Shapes</option>
+            <option value="video">Video Background</option>
+            <option value="three-d">3D Interactive Environment</option>
+          </select>
+        </label>
+        <label>
+          Heading Font
+          <select data-font-target="heading">
+            <option value="'Bitcount Grid Double', 'Space Grotesk', sans-serif" selected>Bitcount Grid Double</option>
+            <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+            <option value="'Inter', sans-serif">Inter</option>
+            <option value="'Manrope', sans-serif">Manrope</option>
+          </select>
+        </label>
+        <label>
+          Body Font
+          <select data-font-target="body">
+            <option value="'Inter', sans-serif" selected>Inter</option>
+            <option value="'Manrope', sans-serif">Manrope</option>
+            <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+            <option value="'Bitcount Grid Double', sans-serif">Bitcount Grid Double</option>
+          </select>
+        </label>
+        <label>
+          Button Font
+          <select data-font-target="button">
+            <option value="'Space Grotesk', sans-serif" selected>Space Grotesk</option>
+            <option value="'Inter', sans-serif">Inter</option>
+            <option value="'Manrope', sans-serif">Manrope</option>
+            <option value="'Bitcount Grid Double', sans-serif">Bitcount Grid Double</option>
+          </select>
+        </label>
+        <label>Primary <input type="color" data-color="primary" value="#ff2b3d"></label>
+        <label>Secondary <input type="color" data-color="secondary" value="#bdefff"></label>
+        <label>Accent <input type="color" data-color="accent" value="#18c964"></label>
+        <label>Background <input type="color" data-color="background" value="#ffffff"></label>
+        <label>Text <input type="color" data-color="text" value="#6e2bbd"></label>
+      </div>
+      <div class="effect-row">
+        <label><input type="checkbox" data-effect="glow" checked> Glow</label>
+        <label><input type="checkbox" data-effect="glass" checked> Glass blur</label>
+        <label><input type="checkbox" data-effect="lighting" checked> Dynamic lighting</label>
+        <label><input type="checkbox" data-effect="parallax" checked> Parallax</label>
+        <label><input type="checkbox" data-effect="cursor" checked> Custom cursor</label>
+      </div>
+    </section>
+
+    <section class="bento section-panel" id="about">
+      <article class="bento-card wide reveal">
+        <p class="eyebrow">About me</p>
+        <h2>Editable story</h2>
+        <p data-edit="about">
+          I am a student building a confident path into technology, design, and problem solving. This portfolio is ready for my story, projects, certifications, achievements, and future opportunities.
+        </p>
+      </article>
+      <article class="bento-card reveal" id="education">
+        <h3>Education</h3>
+        <p data-edit="education">School, program, subjects, clubs, and learning milestones can be added here.</p>
+      </article>
+      <article class="bento-card reveal">
+        <h3>Experience</h3>
+        <p data-edit="experience">Leadership roles, volunteering, internships, competitions, or school activities.</p>
+      </article>
+      <article class="bento-card reveal">
+        <h3>Certifications</h3>
+        <p data-edit="certifications">Add certificates, online courses, workshops, and training achievements.</p>
+      </article>
+      <article class="bento-card reveal">
+        <h3>Achievements</h3>
+        <p data-edit="achievements">Awards, recognitions, competition results, and proud milestones.</p>
+      </article>
+    </section>
+
+    <section class="skills section-panel" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Interactive skills</p>
+        <h2>Tech orbit system</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="sphere-wrap reveal">
+          <canvas id="skill-sphere" aria-label="Rotating skill sphere"></canvas>
+        </div>
+        <div class="skill-list reveal">
+          <button class="skill-pill magnetic" data-edit="skillOne">HTML</button>
+          <button class="skill-pill magnetic" data-edit="skillTwo">CSS</button>
+          <button class="skill-pill magnetic" data-edit="skillThree">JavaScript</button>
+          <button class="skill-pill magnetic" data-edit="skillFour">UI Design</button>
+          <button class="skill-pill magnetic" data-edit="skillFive">Problem Solving</button>
+          <button class="skill-pill magnetic" data-edit="skillSix">Teamwork</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-panel" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Project showcase</p>
+        <h2>3D tilt cards</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal tilt-card">
+          <span>01</span>
+          <h3 data-edit="projectOneTitle">Smart Study Dashboard</h3>
+          <p data-edit="projectOneDesc">A customizable student dashboard concept for goals, subjects, tasks, and progress.</p>
+        </article>
+        <article class="project-card reveal tilt-card">
+          <span>02</span>
+          <h3 data-edit="projectTwoTitle">Interactive Portfolio</h3>
+          <p data-edit="projectTwoDesc">A futuristic personal website with design controls, animations, and 3D effects.</p>
+        </article>
+        <article class="project-card reveal tilt-card">
+          <span>03</span>
+          <h3 data-edit="projectThreeTitle">Creative Tech Journal</h3>
+          <p data-edit="projectThreeDesc">A digital learning journal for experiments, notes, achievements, and reflections.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-panel" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let opportunities find you</h2>
+        <div class="contact-grid">
+          <p><strong>Email</strong><span data-edit="email">ulfah@example.com</span></p>
+          <p><strong>Phone</strong><span data-edit="phone">+60 00-000 0000</span></p>
+          <p><strong>Location</strong><span data-edit="location">Malaysia</span></p>
+        </div>
+        <div class="social-links">
+          <a class="magnetic" href="#" data-edit="linkedin">LinkedIn</a>
+          <a class="magnetic" href="#" data-edit="github">GitHub</a>
+          <a class="magnetic" href="#" data-edit="instagram">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="editor-panel" id="editorPanel" aria-label="Content editor">
+    <button class="editor-toggle magnetic" type="button" id="editorToggle">Edit</button>
+    <div class="editor-body">
+      <h2>Content editor</h2>
+      <p>Click any editable text on the page, then type directly. Changes save in this browser.</p>
+      <button class="btn primary" type="button" id="resetContent">Reset placeholders</button>
+    </div>
+  </aside>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
